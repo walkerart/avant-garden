@@ -1,24 +1,24 @@
 <!doctype html>
 <head>
     <title>Avant Garden &mdash; Instagram</title>
-    <link rel="stylesheet" 
-href="http://f.fontdeck.com/s/css/XlZhgFnikEdtiJMXs9Dy8eVyw+M/garden.walkerart.org/5135.css" 
+    <link rel="stylesheet"
+href="http://f.fontdeck.com/s/css/XlZhgFnikEdtiJMXs9Dy8eVyw+M/garden.walkerart.org/5135.css"
 type="text/css" />
     <style>
         body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; -webkit-appearance: none; } table { border-collapse: collapse; border-spacing: 0; } fieldset, img { border: 0; } address, caption, cite, code, dfn, em, strong, th, var { font-style: inherit; font-weight: inherit; } li { list-style: none; } caption, th { text-align: left; } h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; } q:before, q:after { content: ''; } abbr, acronym { border: 0; font-variant: normal; } sup { vertical-align: text-top; } sub { vertical-align: text-bottom; } input, textarea, select { font-family: inherit; font-size: inherit; font-weight: inherit; } section, article, aside, footer, header, nav, hgroup { display: block; } time { display: inline; } :hover, :active { outline: none; }
-        
+
         body {
-            background: #13b13f;
+            background: #000;
             color: #fff;
             font-family: 'Apercu Regular', Helvetica, Arial, sans-serif;
             text-rendering: optimizeLegibility;
             -webkit-font-smoothing: antialiased;
         }
-        
+
         #container {
             min-width: 1280px;
         }
-        
+
         #username {
             position: absolute;
             bottom: 5px;
@@ -36,42 +36,42 @@ type="text/css" />
             text-transform: uppercase;
             white-space: nowrap;
         }
-        
+
         header {
             position: relative;
             float: left;
             width: 512px;
             height: 768px;
         }
-        
+
         header h1 {
             margin-top: 300px;
             font-size: 40px;
             line-height: 48px;
             text-align: center;
         }
-        
+
         strong {
             font-family: 'Apercu Bold', Helvetica, Arial, sans-serif;;
             font-weight: bold;
         }
-        
+
         #left {
             float: left;
             width: 768px;
         }
-        
+
         #images_container {
             background: #fff;
             margin: 20px;
             padding: 13px;
             line-height: 0;
         }
-        
+
         #images #next {
             display: none;
         }
-        
+
         img {
             width: 100% !important;
         }
@@ -89,7 +89,7 @@ type="text/css" />
         </div>
         <header>
             <div id="username"></div>
-            <h1>Tag<br><strong>#walkeravantgarden</strong><br>on Instagram</h1>
+            <h1>Tag<br><strong>#walktoberfest</strong><br>on Instagram</h1>
         </header>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
@@ -97,7 +97,7 @@ type="text/css" />
         var image;
         var nextImage;
         var username = 'Loading&hellip;';
-        
+
         var pullImage = function() {
             $.ajax({
                 url: 'slide.php',
@@ -113,7 +113,7 @@ type="text/css" />
             });
             window.setTimeout(pullImage, 5000);
         };
-    
+
         $(document).ready(function() {
             pullImage();
         });
